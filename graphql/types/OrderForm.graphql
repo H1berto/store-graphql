@@ -115,12 +115,12 @@ type OrderFormItem {
   """
   unitMultiplier: Float
   canHaveAttachment: Boolean
-  attachments: [AttachmentItem]
+  attachments: [Attachment!]!
 }
-scalar AttachmentContent
-type AttachmentItem {
+scalar AttachmentSchema
+type Attachment {
   name: String
-  content: AttachmentContent
+  content: AttachmentSchema
 }
 
 type ItemAdditionalInfo {
